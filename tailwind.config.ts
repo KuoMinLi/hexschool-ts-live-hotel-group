@@ -10,6 +10,13 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        primary: '#BF9D7D',
+        error: '#DA3E51',
+        success: '#52DD7E',
+        info: '#3BADEF',
+        neutral: '#000000',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
