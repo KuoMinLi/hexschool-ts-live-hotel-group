@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Header from '../components/layout/header'
 import './globals.css'
 
 import { Providers as ThemeProvider } from "@/providers/ThemeProvider"
@@ -21,7 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
-          <ReactQueryProvider>{children}</ReactQueryProvider>
+          <ReactQueryProvider>
+            <Header />
+            {children}
+          </ReactQueryProvider>
         </ThemeProvider>
       </body>
     </html>
